@@ -1,0 +1,49 @@
+---
+title: "Share Product Updates with Customers Using Chatr Changelog"
+sidebarTitle: "Changelog"
+description: "Connect your GitHub repository to Chatr and automatically turn commits into product update posts visible to customers in the chat widget."
+icon: "history"
+---
+
+Chatr's Changelog feature connects to your GitHub repository and turns commits into polished product update posts. Customers can see what's new directly in the chat widget — and you can keep them in the loop without writing a separate newsletter.
+
+## Connecting GitHub
+
+<Steps>
+  <Step title="Open Integrations">
+    Go to **Integrations** in your Chatr dashboard.
+  </Step>
+  <Step title="Connect GitHub">
+    Click **Connect** next to the GitHub section.
+  </Step>
+  <Step title="Authorize access">
+    Authorize Chatr to access your GitHub account. You'll be redirected back to the dashboard once authorization is complete.
+  </Step>
+  <Step title="Select your repository and branch">
+    Choose the repository and the branch you want to track — for example, `main`. Chatr will watch this branch for new commits.
+  </Step>
+  <Step title="Initial sync">
+    Chatr immediately syncs your recent commits and lists them as pending updates, ready for you to review and publish.
+  </Step>
+</Steps>
+
+## Publishing an update
+
+Once GitHub is connected, Chatr surfaces new commits as draft posts you control before they go live:
+
+1. Go to the **Changelog** tab under **Updates → Pending** to see commits awaiting review.
+2. Review the auto-generated post — Chatr fills in the category, date, branch, and commit hash for you.
+3. Click **Post Update** to publish it to the widget, or click **View on GitHub** to inspect the commit in full before deciding.
+4. Published updates appear in the **Updates → Posted** list and become visible to visitors in the widget's **Latest updates** section.
+
+## Adding updates manually
+
+Click **Add Update** to write and publish a changelog entry without a GitHub commit. Use manual updates for announcements, pricing changes, policy updates, or any non-code news you want customers to see.
+
+## What visitors see
+
+Visitors tap **Latest updates** in the chat widget to browse a chronological feed of your recent product updates. This keeps your customers informed and engaged without requiring them to visit a separate blog or changelog page.
+
+<Note>
+  Only changes merged to your tracked branch (e.g. `main`) appear in the changelog. Commits on feature branches are not surfaced until they are merged.
+</Note>

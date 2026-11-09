@@ -1,0 +1,50 @@
+---
+title: "Train Your Chatr Bot with Website Crawling and Knowledge"
+sidebarTitle: "Knowledge & Training"
+description: "Chatr crawls your website automatically to train the AI on your products, pricing, and FAQs. Learn how to manage and refresh the bot's knowledge base."
+icon: "brain"
+---
+
+Chatr trains the AI by crawling your website. The bot reads every page it can find so it can answer questions about your products, pricing, features, and brand — without any manual copy-pasting. Give it a URL and it handles the rest.
+
+## How training works
+
+1. Paste your site URL in the **Brain & Knowledge** panel of the Chatr dashboard.
+2. Chatr crawls all linked pages it can access from that root URL.
+3. The AI learns your tone, products, pricing, FAQs, and guardrails from the content it finds.
+4. The bot answers only from what it has crawled — it won't hallucinate information outside your site.
+
+## Keeping the bot current
+
+Your site changes over time, and the bot needs to keep up. Chatr offers several refresh frequencies depending on your plan:
+
+| Frequency | How it works | Plans |
+| --- | --- | --- |
+| **Manual refresh** | Click **Refresh** in the Brain & Knowledge panel to trigger a re-crawl immediately. | All plans |
+| **Monthly auto-refresh** | Chatr automatically re-crawls your site once a month. | Starter, Growth |
+| **Weekly auto-refresh** | Chatr automatically re-crawls your site once a week. | Scale, Enterprise |
+| **Daily auto-scan** | The bot re-crawls every day so it stays current with every site change. | Scale, Enterprise |
+
+<Note>
+  After publishing new pricing or product pages, trigger a manual refresh so the bot immediately reflects the change — don't wait for the next scheduled scan.
+</Note>
+
+## What the bot knows
+
+After a successful crawl, the bot has access to:
+
+- All text content on publicly accessible pages
+- Product descriptions, pricing tables, feature lists, FAQs, and blog posts
+- The content in your **Bot Description** field, which is injected as brand context into every conversation
+
+## What the bot doesn't know
+
+Some content is outside what Chatr can crawl:
+
+- **Password-protected or login-required pages** — The crawler can't authenticate, so private content is never included.
+- **PDF or document files** — Unless the document's text is rendered as accessible HTML on a crawlable page, the bot won't see it.
+- **Changes made after the last scan** — Always trigger a manual refresh after major site updates so the bot reflects the latest information.
+
+<Tip>
+  Keep a public FAQ or pricing page on your site. The more structured your site content, the more accurate the bot's answers will be.
+</Tip>

@@ -1,0 +1,98 @@
+{
+  "projectType": "saas",
+  "projectName": "Chatr",
+  "projectDescription": "Chatr is an AI-powered chat widget that handles customer support, books appointments, collects feedback, and processes Stripe payments — all from a single embeddable chat bubble.",
+  "theme": "almond",
+  "primaryColor": "#147ccc",
+  "lightColor": "#1c1c1c",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "plans"
+            ]
+          },
+          {
+            "group": "Chatbot Setup",
+            "pages": [
+              "chatbot/appearance",
+              "chatbot/knowledge",
+              "chatbot/widget-layout",
+              "chatbot/embedding"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/inbox",
+              "features/contacts",
+              "features/appointments",
+              "features/feedback",
+              "features/changelog",
+              "features/analytics"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/stripe",
+              "integrations/github",
+              "integrations/meetings"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Free Tools",
+        "groups": [
+          {
+            "group": "AI Chat Tools",
+            "pages": [
+              "tools/ai-chat-overview",
+              "tools/ai-generators",
+              "tools/markdown-converters",
+              "tools/seo-utilities"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI chatbot trained on your website content",
+    "In-chat Stripe checkout for payments",
+    "Native appointment booking with calendar",
+    "Feedback collection with Kanban board and upvoting",
+    "GitHub-powered changelog / updates",
+    "Inbox with AI-suggested replies and ticket management",
+    "Contact CRM with AI conversation summaries",
+    "Analytics dashboard (conversations, leads, bookings, revenue)",
+    "Integrations: Zoom, Google Meet, Microsoft Teams, Stripe, GitHub",
+    "One-line embed script for any website",
+    "Full brand customization (colors, avatar, welcome message)",
+    "37 free AI and SEO tools"
+  ],
+  "publicApiSurface": [
+    "Embed script (one-line JavaScript snippet)",
+    "Webhooks API (unlimited webhooks)",
+    "Stripe integration (in-chat checkout, plan cards)",
+    "GitHub integration (auto-changelog via repo sync)",
+    "Meeting link integrations (Zoom, Google Meet, Microsoft Teams)",
+    "Contact CSV export",
+    "Chatbot widget configuration (REST settings via dashboard)"
+  ]
+}

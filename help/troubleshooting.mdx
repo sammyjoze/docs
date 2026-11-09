@@ -1,0 +1,72 @@
+---
+title: "How to Troubleshoot Common Chatr Widget and Bot Issues"
+sidebarTitle: "Troubleshooting"
+description: "Step-by-step fixes for common Chatr issues — widget not showing, wrong bot answers, Stripe not working, and appointment booking problems."
+icon: "tools"
+---
+
+If something isn't working as expected, this guide covers the most common issues and how to resolve them. For anything not covered here, reach out at [team@chatrai.app](mailto:team@chatrai.app).
+
+<AccordionGroup>
+
+  <Accordion title="The widget isn't appearing on my site">
+    Work through these checks in order:
+
+    1. Verify the embed snippet is pasted before the closing `</body>` tag.
+    2. Check that the `data-workspace-id` in the snippet matches the ID shown in your **Installation** tab.
+    3. If you use Domain Targeting, make sure your domain is whitelisted in the Domain Targeting settings.
+    4. Disable browser extensions — ad blockers can silently block the widget script.
+    5. Open your browser console and check for JavaScript errors that reference the Chatr script.
+  </Accordion>
+
+  <Accordion title="The bot is giving outdated or incorrect answers">
+    1. Trigger a manual refresh in the **Brain & Knowledge** panel to force a re-crawl of your site.
+    2. Verify your site pages are publicly accessible — pages behind a login wall cannot be crawled.
+    3. Check that the page containing the correct information is linked from somewhere on your site. Chatr follows links, not sitemaps.
+    4. Update your **Bot Description** to clarify the bot's scope if it's answering questions outside its intended domain.
+  </Accordion>
+
+  <Accordion title="The bot isn't answering questions about a specific page">
+    1. Ensure the page is linked from another page that Chatr has already crawled — Chatr follows links, not sitemaps.
+    2. Check that the page content is in plain HTML text. Content loaded by JavaScript after the initial page render may not be captured.
+    3. After fixing either issue, trigger a manual refresh in the **Brain & Knowledge** panel.
+  </Accordion>
+
+  <Accordion title="Stripe checkout isn't working">
+    1. Verify your Stripe account is connected in **Integrations**.
+    2. Confirm you've selected **In-chat Stripe checkout** — not **Link to pricing page**.
+    3. Check that your Stripe Price IDs are entered correctly in the plan cards setup.
+    4. Test in Stripe's test mode before going live to isolate configuration issues.
+  </Accordion>
+
+  <Accordion title="Appointments aren't being booked">
+    1. Check that a meeting link is configured in **Integrations → Meeting links**.
+    2. Verify your availability hours are set in **Widget Settings**.
+    3. Ensure the **Appointments** action card is toggled on in **Widget Layout** settings.
+  </Accordion>
+
+  <Accordion title="GitHub commits aren't appearing in the changelog">
+    1. Click **Sync Now** in the GitHub integration panel to force an immediate sync.
+    2. Verify the correct repository and branch are selected in the integration settings.
+    3. Check that your GitHub account still has access to the repository.
+    4. Re-authorize the GitHub connection if it was recently revoked.
+  </Accordion>
+
+  <Accordion title="I'm not receiving feedback from visitors">
+    1. Ensure the **Feedback** action card is toggled on in **Widget Layout** settings.
+    2. Verify your AI suggestions include a prompt that encourages visitors to share feedback.
+    3. Check the **Feedback** board in your dashboard — submissions appear there, not in the Inbox.
+  </Accordion>
+
+  <Accordion title="My message count seems wrong">
+    - Message counts update in real time in the **Analytics** dashboard.
+    - Each visitor message sent to the bot counts as one message toward your monthly limit.
+    - AI-suggested replies sent by your team do **not** count toward the limit.
+    - If you believe there is an accounting error, contact [team@chatrai.app](mailto:team@chatrai.app) with your workspace ID and the details.
+  </Accordion>
+
+</AccordionGroup>
+
+<Note>
+  For issues not covered here, email [team@chatrai.app](mailto:team@chatrai.app). Include your workspace ID and a description of the issue — the team responds within 24 hours on business days.
+</Note>

@@ -1,0 +1,47 @@
+---
+title: "Configure Chatr Widget Layout, Cards, and Domain Rules"
+sidebarTitle: "Widget Layout"
+description: "Customize the Chatr chat widget's layout, AI quick-reply suggestions, action cards, custom CSS injection, and domain targeting rules."
+icon: "layout-grid"
+---
+
+The Widget Layout settings in the Chatr dashboard control how the chat interface looks and behaves for your site visitors — from the suggested replies they see on first open to which domains show the widget. Use these settings to make every interaction feel intentional and on-brand.
+
+## AI Suggestions
+
+AI Suggestions are quick-reply buttons displayed when the chat first opens. They give visitors an immediate, low-friction way to start a conversation.
+
+Add up to 3–4 short prompts that guide visitors toward your most common use cases. For example:
+
+- "Explore pricing options"
+- "Tell me about the features"
+- "How does the chatbot work?"
+
+Keep each suggestion under 8 words so it fits cleanly on the button without truncation.
+
+## Action Cards
+
+Action Cards are pre-built interactive cards visitors can tap directly from the chat widget. Toggle each card on or off depending on which features you have enabled in your workspace:
+
+- **Book a demo or meeting** — Links visitors directly to your scheduling flow.
+- **Submit a feature request or bug report** — Collects structured feedback without leaving the chat.
+- **View the latest product updates** — Surfaces your changelog or release notes.
+- **Start a Stripe checkout** — Initiates a payment flow for purchases or upgrades.
+
+Enable only the cards that are relevant to your product — a focused set of actions converts better than an overwhelming menu.
+
+## Custom CSS
+
+Inject custom CSS directly into the widget frame for fine-grained visual control beyond the primary color setting. Use this to adjust font size, spacing, border radius, or any other styling detail across all widget surfaces.
+
+To add custom CSS, paste your styles into the **Custom CSS** field in the Widget Layout panel. Changes apply globally to the widget on every page where it loads.
+
+## Domain Targeting
+
+Restrict which domains display the chat widget. This is useful when you embed the snippet globally — for example, in a CMS layout template — but only want the widget visible on specific domains or subdomains.
+
+Enter one domain per line (e.g. `app.example.com`). Leave the field blank to show the widget on every domain that includes the embed snippet.
+
+<Warning>
+  Domain targeting uses the full origin (e.g. `app.example.com`), not path-based rules. To show the widget only on specific pages, use JavaScript to conditionally load the embed script based on `window.location.pathname`.
+</Warning>

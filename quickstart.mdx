@@ -1,0 +1,72 @@
+---
+title: "Launch Your Chatr AI Chat Widget in Under 2 Minutes"
+sidebarTitle: "Quick Start"
+description: "Create your Chatr account, train the AI on your website content, and embed your live chat widget with a single line of JavaScript code."
+icon: "bolt"
+---
+
+Chatr is designed to go from signup to a fully live AI assistant in under 2 minutes. Paste your URL, customize your bot, embed one script tag — and you're done. No engineering work, no manual training, no complicated setup. Follow the steps below to launch your widget.
+
+<Steps>
+  <Step title="Create your account">
+    Go to [chatrai.app/signup](https://chatrai.app/signup) and create your account. Choose passwordless sign-in (enter your email and confirm with the 8-digit code sent to your inbox) or sign up with Google in one click. Every new account starts a **7-day free trial** — no credit card required.
+  </Step>
+  <Step title="Add your website URL">
+    Enter your website address in the Chatbot Setup panel. Chatr crawls all pages of your site and trains the AI automatically — your products, pricing, FAQs, tone of voice, and policies are all absorbed without any manual input. When the crawl completes, you'll see a summary of everything the bot learned.
+  </Step>
+  <Step title="Customize your bot">
+    Make the widget feel like your product. In the Chatbot Setup panel, set:
+
+    - **Name** — give your assistant a persona that fits your brand
+    - **Avatar** — upload a custom image, generate one, or choose a preset
+    - **Primary color** — match your site's brand color
+    - **Welcome message** — write the first thing visitors see when they open the chat
+    - **Quick-reply suggestions** — add shortcut buttons that guide users to common actions
+  </Step>
+  <Step title="Enable features">
+    Head to the **Integrations** panel and toggle on the capabilities you want:
+
+    - **Stripe payments** — connect your Stripe account to accept in-chat checkout
+    - **Appointment booking** — link Zoom, Google Meet, or Microsoft Teams to enable scheduling
+    - **Feedback collection** — activate the Kanban board to capture bugs and feature requests
+    - **GitHub changelog** — connect your repo to auto-generate release notes for users
+
+    Each feature can be toggled on or off at any time — no redeployment required.
+  </Step>
+  <Step title="Embed the widget">
+    Copy the one-line script tag from the **Embed** section of your dashboard:
+
+    ```html
+    <script src="https://chatrai.app/widget.js" data-id="YOUR_WORKSPACE_ID" async></script>
+    ```
+
+    Paste it before the closing `</body>` tag on your site. The widget goes live the moment visitors load your page — no build step, no framework dependency.
+  </Step>
+  <Step title="Go live">
+    Your AI assistant is now running 24/7 — answering support questions, booking meetings, collecting feedback, and processing Stripe payments while you sleep. Check your **Inbox** to review conversations, and open **Analytics** to track message volume and top questions from day one.
+  </Step>
+</Steps>
+
+<Note>
+  The AI updates automatically when you refresh your site scan. On the Scale plan, daily auto-scanning keeps the bot current with every site change.
+</Note>
+
+## What's next
+
+<CardGroup cols={2}>
+  <Card title="Customize Appearance" icon="palette" href="/chatbot/appearance">
+    Fine-tune colors, avatar, chat bubble position, and conversation shell copy to match your brand perfectly.
+  </Card>
+
+  <Card title="Set Up Stripe Payments" icon="credit-card" href="/integrations/stripe">
+    Connect your Stripe account and configure products so the AI can close deals and collect payments in the chat.
+  </Card>
+
+  <Card title="Configure Booking Links" icon="calendar" href="/integrations/meetings">
+    Link Zoom, Google Meet, or Microsoft Teams so visitors can book appointments without leaving the widget.
+  </Card>
+
+  <Card title="Manage Your Inbox" icon="inbox" href="/features/inbox">
+    Review every conversation, reply manually or with AI assistance, and route tickets to the right team member.
+  </Card>
+</CardGroup>

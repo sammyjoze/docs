@@ -1,0 +1,98 @@
+---
+title: "Connect Zoom, Google Meet, or Teams for Chat Bookings"
+sidebarTitle: "Meeting Links"
+description: "Link your Zoom, Google Meet, or Microsoft Teams meeting room to Chatr so visitors receive the correct join link when they book an appointment in chat."
+icon: "video"
+---
+
+Chatr's meeting integration attaches your video conferencing link to every appointment booked through the chat widget. When a visitor books a call, they automatically receive the join link — no manual follow-up needed.
+
+## Supported providers
+
+<CardGroup cols={3}>
+  <Card title="Zoom" icon="video">
+    Supports Personal Meeting Room links — a permanent URL tied to your account.
+  </Card>
+  <Card title="Google Meet" icon="video">
+    Supports any Meet room link generated from Google Calendar.
+  </Card>
+  <Card title="Microsoft Teams" icon="video">
+    Supports Teams meeting invite links from Calendar or Channel meetings.
+  </Card>
+</CardGroup>
+
+<Note>
+  **Coming soon:** Slack, Discord, and Zapier integrations are on the roadmap.
+</Note>
+
+## Setting up your meeting link
+
+<Steps>
+  <Step title="Open Integrations">
+    Go to **Integrations** in your Chatr dashboard.
+  </Step>
+  <Step title="Select your provider">
+    Under **Meeting links**, select your provider (Zoom, Google Meet, or Teams).
+  </Step>
+  <Step title="Paste your meeting link">
+    Paste your meeting room link into the field provided.
+  </Step>
+  <Step title="Set an appointment purpose">
+    Set an **Appointment purpose** — a short description like "Discovery call" or "Live product demo". The AI uses this so it never has to guess what the meeting is for.
+  </Step>
+  <Step title="Save">
+    Save. Chatr will include this link in all booking confirmations.
+  </Step>
+</Steps>
+
+<Note>
+  You can only set one active meeting link at a time. If you run different call types, use the Appointment purpose field to describe the primary use case and handle any routing manually.
+</Note>
+
+## Finding your meeting link
+
+<Tabs>
+  <Tab title="Zoom">
+    Your Personal Meeting Room has a permanent ID and URL that doesn't change between sessions. To find it:
+
+    1. Open the [Zoom web portal](https://zoom.us) and sign in.
+    2. Go to **Meetings → Personal Room**.
+    3. Click **Copy Invite Link**.
+
+    The link follows the format `https://zoom.us/j/YOUR_PMI_NUMBER`.
+
+    <Warning>
+      If you reset your Personal Meeting Room passcode, the invite link may change. Update it in Chatr immediately to keep bookings working correctly.
+    </Warning>
+  </Tab>
+  <Tab title="Google Meet">
+    Google Meet links are tied to calendar events. To get a consistent link:
+
+    1. Open [Google Calendar](https://calendar.google.com) and create a new event.
+    2. Click **Add Google Meet video conferencing**.
+    3. Copy the Meet link from the event (e.g. `https://meet.google.com/xxx-xxxx-xxx`).
+
+    <Tip>
+      Use a recurring event so the link stays consistent across bookings without needing updates.
+    </Tip>
+  </Tab>
+  <Tab title="Microsoft Teams">
+    Teams meeting links are generated from calendar invites. To find yours:
+
+    1. Open [Microsoft Teams](https://teams.microsoft.com) and go to **Calendar**.
+    2. Click **New Meeting** and fill in the details.
+    3. Copy the **Join Microsoft Teams Meeting** link from the invite.
+
+    <Tip>
+      For a permanent room that doesn't change between sessions, use a **Channel meeting** link instead of a one-off invite.
+    </Tip>
+  </Tab>
+</Tabs>
+
+## Appointment purpose
+
+The **Appointment purpose** field is shown to the AI assistant so it can accurately describe the meeting to visitors before they book. Keep it short and specific. Example values:
+
+- "Discovery call"
+- "Live product demo"
+- "Technical onboarding session"

@@ -1,0 +1,81 @@
+---
+title: "Accept In-Chat Stripe Payments, Plans, and Checkout"
+sidebarTitle: "Stripe"
+description: "Connect Stripe to Chatr to let visitors pay, subscribe, or check out without ever leaving the chat widget. Supports plan cards and direct Stripe checkout."
+icon: "credit-card"
+---
+
+Chatr's Stripe integration lets visitors complete purchases, subscribe to plans, and check out entirely within the chat widget. No redirect to an external checkout page required — the AI can present plan cards, answer pricing questions, and initiate payment in one continuous conversation.
+
+## How Stripe works in Chatr
+
+Chatr gives you two ways to handle purchases. Choose the mode that fits your existing checkout flow.
+
+<Tabs>
+  <Tab title="Link to Pricing Page">
+    **Link to Pricing Page (Recommended)**
+
+    - The AI explains your plans and answers pricing questions in chat.
+    - When a visitor is ready to buy, it sends them to your existing pricing or signup page.
+    - No Stripe account connection required for this mode — just paste your pricing page URL.
+    - **Best for:** teams with an existing checkout flow who want the AI to handle pre-sales.
+  </Tab>
+  <Tab title="In-Chat Checkout">
+    **In-Chat Stripe Checkout**
+
+    - The full Stripe checkout appears inside the widget.
+    - After payment, the visitor receives a confirmation or is redirected to a URL you specify.
+    - Requires connecting your Stripe account in Integrations.
+    - **Best for:** selling one-time products, subscriptions, or running payment-first flows.
+  </Tab>
+</Tabs>
+
+## Connecting Stripe
+
+<Steps>
+  <Step title="Open Integrations">
+    Go to **Integrations** in your Chatr dashboard.
+  </Step>
+  <Step title="Connect your account">
+    Scroll to the **Stripe** section and click **Connect Stripe**.
+  </Step>
+  <Step title="Authorize access">
+    Authorize Chatr to access your Stripe account via the Stripe OAuth flow.
+  </Step>
+  <Step title="Select the purchase method">
+    Choose **In-chat Stripe checkout** as the purchase method.
+  </Step>
+  <Step title="Add a fallback URL">
+    Add your pricing or signup page URL as a fallback for visitors who prefer to check out on your site.
+  </Step>
+</Steps>
+
+<Note>
+  If you only need the **Link to Pricing Page** mode, skip the Connect Stripe step and go straight to pasting your pricing URL — no Stripe account connection is needed.
+</Note>
+
+## Adding plan cards
+
+Click **Add plan** in the Stripe integration panel to define the plans the AI can quote and display as cards in chat. For each plan, specify:
+
+- **Plan name**
+- **Price**
+- **Key features** — a bullet list of what's included
+- **Stripe Price ID** — found in your Stripe dashboard under **Products**
+
+The AI will show these as interactive plan cards whenever visitors ask about pricing.
+
+## Post-payment actions
+
+After a successful checkout, configure either of the following:
+
+- **Redirect URL** — Sends the visitor to a thank-you page or onboarding flow.
+- **Email confirmation** — Sends a receipt or follow-up email to the buyer.
+
+<Note>
+  Chatr does not store any payment card data. All payment processing happens directly through Stripe's secure infrastructure.
+</Note>
+
+## Automate with webhooks
+
+Need to trigger custom workflows after a payment — like provisioning accounts, updating your CRM, or notifying your team? Chatr supports **unlimited webhooks** so you can push payment and chat events to any external tool or API. Configure webhooks in your workspace Settings panel under **Integrations → Webhooks**.

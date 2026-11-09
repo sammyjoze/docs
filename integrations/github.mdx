@@ -1,0 +1,55 @@
+---
+title: "Sync GitHub Commits to Your Chatr Changelog Automatically"
+sidebarTitle: "GitHub"
+description: "Connect your GitHub repository to Chatr to automatically turn merged commits into changelog posts visible to customers in the chat widget."
+icon: "brand-github"
+---
+
+The GitHub integration connects Chatr to your repository so you can publish product updates without any extra work. When you merge to your tracked branch, Chatr picks up the commits and queues them as changelog entries ready to post.
+
+## Connecting your repository
+
+<Steps>
+  <Step title="Open Integrations">
+    Go to **Integrations** in your Chatr dashboard.
+  </Step>
+  <Step title="Connect GitHub">
+    Scroll to the **GitHub** section and click **Connect**.
+  </Step>
+  <Step title="Authorize via OAuth">
+    Authorize Chatr via GitHub OAuth. You'll be redirected to GitHub to approve access, then returned to your dashboard.
+  </Step>
+  <Step title="Select a repository and branch">
+    Select the repository and branch to track. Most teams use `main`, but you can choose any branch.
+  </Step>
+  <Step title="Confirm the sync">
+    Chatr syncs immediately and shows recent commits as pending changelog entries.
+  </Step>
+</Steps>
+
+## Managing the connection
+
+Use the controls in the GitHub integration panel to manage your connection at any time:
+
+- **Sync Now** — Manually pull the latest commits from your repository.
+- **Configure** — Change the tracked repository or branch.
+- **Disconnect** — Remove the GitHub connection from this workspace.
+
+## The changelog workflow
+
+Commits from your tracked branch appear in **Updates → Changelog → Pending**. Each entry includes:
+
+- Commit title
+- Category (Product, Fix, Infrastructure, etc.)
+- Date and branch
+- Commit hash with a link to GitHub
+
+Review each entry and click **Post Update** to publish it. Visitors can then see the update in the widget's Updates feed.
+
+<Tip>
+  Write descriptive commit messages — Chatr uses them as the changelog entry title. A good format: `feat: add dark mode toggle` or `fix: resolve login redirect issue`.
+</Tip>
+
+## Automatic syncing
+
+The dashboard shows the last synced timestamp so you always know how fresh your changelog entries are. Use **Sync Now** after a release to immediately pull the latest commits without waiting for the next automatic sync cycle.

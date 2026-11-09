@@ -1,0 +1,97 @@
+---
+title: "Embed the Chatr Chat Widget on Any Website or Platform"
+sidebarTitle: "Embedding"
+description: "Add the Chatr chat widget to any website with one line of JavaScript. Works with HTML sites, Next.js, React, Webflow, WordPress, and more."
+icon: "code"
+---
+
+Embedding Chatr takes one line of code. Paste the script snippet before the closing `</body>` tag on your website and the widget loads automatically for every visitor — no framework dependencies, no build step required.
+
+## Get your embed snippet
+
+Navigate to **Chatbot Setup → Live Preview → Installation** tab in your Chatr dashboard. Copy the snippet shown for your workspace.
+
+```html index.html
+<!-- Chatr AI Widget -->
+<script
+  src="https://chatrai.app/widget.js"
+  data-workspace-id="YOUR_WORKSPACE_ID"
+  async
+></script>
+```
+
+<Note>
+  Replace `YOUR_WORKSPACE_ID` with the ID shown in your Installation tab. Each workspace has a unique ID — using the wrong ID will load a different bot or nothing at all.
+</Note>
+
+## Installation by platform
+
+<Tabs>
+  <Tab title="HTML / Static Sites">
+    Paste the snippet before the closing `</body>` tag in every HTML file, or — more efficiently — add it once to your shared layout template so it loads on every page automatically.
+
+    ```html index.html
+    <!-- Chatr AI Widget -->
+    <script
+      src="https://chatrai.app/widget.js"
+      data-workspace-id="YOUR_WORKSPACE_ID"
+      async
+    ></script>
+    </body>
+    </html>
+    ```
+  </Tab>
+  <Tab title="Next.js / React">
+    Add the widget to your root layout using the `next/script` component. Setting `strategy="lazyOnload"` ensures the widget loads after the page is interactive so it never blocks rendering.
+
+    ```jsx pages/_document.jsx
+    import Script from 'next/script'
+    
+    export default function Document() {
+      return (
+        <html>
+          <body>
+            {/* page content */}
+            <Script
+              src="https://chatrai.app/widget.js"
+              data-workspace-id="YOUR_WORKSPACE_ID"
+              strategy="lazyOnload"
+            />
+          </body>
+        </html>
+      )
+    }
+    ```
+  </Tab>
+  <Tab title="Webflow">
+    1. Open your Webflow project and go to **Site Settings → Custom Code**.
+    2. Scroll to the **Footer Code** section.
+    3. Paste the snippet into the footer code field.
+    4. Click **Save Changes**, then **Publish** your site.
+
+    The widget will appear on every published page.
+  </Tab>
+  <Tab title="WordPress">
+    **Option A — Theme file (developer)**
+
+    Add the script via your theme's `functions.php` using `wp_enqueue_script` so it loads in the footer on every page.
+
+    **Option B — Plugin (no-code)**
+
+    Install a plugin like **Insert Headers and Footers**, navigate to the plugin settings, and paste the snippet into the **Footer** field. Save and you're done — no theme editing required.
+  </Tab>
+</Tabs>
+
+## Verify the installation
+
+After adding the snippet, confirm everything is working:
+
+1. Open your site in a browser — the chat bubble should appear in the **bottom-right corner** of the page.
+2. Click the bubble to confirm your welcome message loads correctly.
+3. Send a test message to verify the AI responds with relevant answers.
+
+If the widget doesn't appear, double-check that `YOUR_WORKSPACE_ID` matches the ID in your Installation tab and that the script tag is present in the page source.
+
+<Tip>
+  Use **Domain Targeting** in the Widget Layout settings if you need to restrict the widget to specific domains or subdomains after embedding it globally.
+</Tip>

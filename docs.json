@@ -1,0 +1,129 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Chatr",
+  "description": "AI chat assistant documentation — support, bookings, feedback, and payments in one widget.",
+  "colors": {
+    "primary": "#0866FF",
+    "light": "#0866FF",
+    "dark": "#0866FF"
+  },
+  "favicon": {
+    "light": "/images/3.png",
+    "dark": "/images/3.png"
+  },
+  "logo": {
+    "light": "https://media.brand.dev/28756daf-144b-474e-ade2-8f4cb1d1ec15.png",
+    "dark": "/images/chatr.png"
+  },
+  "icons": {
+    "library": "tabler"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant"]
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "plans"
+            ],
+            "icon": "rocket"
+          },
+          {
+            "group": "Chatbot Setup",
+            "pages": [
+              "chatbot/appearance",
+              "chatbot/knowledge",
+              "chatbot/widget-layout",
+              "chatbot/embedding"
+            ],
+            "icon": "robot"
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/inbox",
+              "features/contacts",
+              "features/appointments",
+              "features/feedback",
+              "features/changelog",
+              "features/analytics"
+            ],
+            "icon": "sparkles"
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/stripe",
+              "integrations/github",
+              "integrations/meetings"
+            ],
+            "icon": "plug"
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting"
+            ],
+            "icon": "help"
+          }
+        ]
+      },
+      {
+        "tab": "Free Tools",
+        "groups": [
+          {
+            "group": "AI & SEO Tools",
+            "pages": [
+              "tools/ai-chat-overview",
+              "tools/ai-generators",
+              "tools/markdown-converters",
+              "tools/seo-utilities"
+            ],
+            "icon": "tools"
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "href": "mailto:team@chatrai.app",
+        "label": "Support"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Start free trial",
+      "href": "https://chatrai.app/signup"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/chatrai"
+    }
+  },
+  "appearance": {
+    "default": "light",
+    "strict": false
+  },
+  "seo": {
+    "indexing": "all"
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/introduction",
+      "permanent": true
+    }
+  ]
+}
